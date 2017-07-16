@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace CityInfo.WebAPI
 {
@@ -16,6 +18,23 @@ namespace CityInfo.WebAPI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            NewMethod(services);
+        }
+
+        private static void NewMethod(IServiceCollection services)
+        {
+
+            services.AddMvc()
+                 .AddMvcOptions(o => o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter()));
+               //.AddJsonOptions(o =>
+               //{
+               //    if (o.SerializerSettings.ContractResolver != null)
+               //    {
+               //        var castedResolver = o.SerializerSettings.ContractResolver
+               //            as DefaultContractResolver;
+               //        castedResolver.NamingStrategy = null;
+               //    }
+               //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,21 +46,24 @@ namespace CityInfo.WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-            //else
-            //{
-            //    app.UseExceptionHandler();
-            //}
 
+            
+            else
+            {
+                app.UseExceptionHandler();
+            }
+            app.UseMvc();
+            app.UseStatusCodePages();
             //app.Run((context) =>
             //{
             //    throw new Exception("Example exeption");
             //});
 
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Hello World!");
+            //});
         }
     }
 }
