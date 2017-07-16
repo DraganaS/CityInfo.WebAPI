@@ -1,0 +1,9 @@
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\bin\Debug\netcoreapp1.1\CityInfo.WebAPI.deps.json
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\bin\Debug\netcoreapp1.1\CityInfo.WebAPI.runtimeconfig.json
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\bin\Debug\netcoreapp1.1\CityInfo.WebAPI.runtimeconfig.dev.json
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\bin\Debug\netcoreapp1.1\CityInfo.WebAPI.dll
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\bin\Debug\netcoreapp1.1\CityInfo.WebAPI.pdb
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\obj\Debug\netcoreapp1.1\CityInfo.WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\obj\Debug\netcoreapp1.1\CityInfo.WebAPI.AssemblyInfo.cs
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\obj\Debug\netcoreapp1.1\CityInfo.WebAPI.dll
+C:\Users\D.Stoimenova\Documents\GitHub\CityInfo.WebAPI\CityInfo.WebAPI\obj\Debug\netcoreapp1.1\CityInfo.WebAPI.pdb
